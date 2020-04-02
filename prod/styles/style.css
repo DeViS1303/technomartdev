@@ -1,0 +1,137 @@
+@import url(normolize.css);
+@font-face {
+  font-family: 'Cuprum';
+  src: url("../fonts/Cuprum.woff2") format("woff2"), url("../fonts/Cuprum.woff") format("woff"); }
+
+@font-face {
+  font-family: 'CuprumBold';
+  src: url("../fonts/CuprumBold.woff2") format("woff2"), url("../fonts/CuprumBold.woff") format("woff"); }
+
+@font-face {
+  font-family: 'CuprumBoldItalic';
+  src: url("../fonts/CuprumBoldItalic.woff2") format("woff2"), url("../fonts/CuprumBoldItalic.woff") format("woff"); }
+
+@font-face {
+  font-family: 'CuprumItalic';
+  src: url("../fonts/CuprumItalic.woff2") format("woff2"), url("../fonts/CuprumItalic.woff") format("woff"); }
+
+@font-face {
+  font-family: 'PT-Sans';
+  src: url("../fonts/PT-Sans.woff2") format("woff2"), url("../fonts/PT-Sans.woff") format("woff"); }
+
+@font-face {
+  font-family: 'PT-SansBold';
+  src: url("../fonts/PT-SansBold.woff2") format("woff2"), url("../fonts/PT-SansBold.woff") format("woff"); }
+
+body {
+  font-family: "Cuprum";
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+.wrap {
+  width: 940px;
+  margin: 0 auto; }
+
+.flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.main-header__top {
+  background-color: #293449; }
+
+.main-header__title {
+  display: block;
+  margin: 0; }
+
+.main-header__link-title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 24px;
+  background-color: #ee3643;
+  outline: none;
+  display: block;
+  padding-right: 55px;
+  padding-left: 55px;
+  padding-top: 9px;
+  padding-bottom: 9px; }
+  .main-header__link-title:hover {
+    background-color: #ca2c37; }
+  .main-header__link-title:focus {
+    background-color: #ca2c37; }
+  .main-header__link-title:active {
+    background-color: #ba2732; }
+
+.main-header__input-search {
+  font-size: 17px;
+  line-height: 18px;
+  border: 0;
+  outline: none;
+  background-color: #293449;
+  width: 270px;
+  padding: 0;
+  padding-left: 50px;
+  padding-top: 12px;
+  padding-bottom: 12px; }
+  .main-header__input-search::-webkit-input-placeholder {
+    color: #fff; }
+  .main-header__input-search::-moz-placeholder {
+    color: #fff; }
+  .main-header__input-search:-ms-input-placeholder {
+    color: #fff; }
+  .main-header__input-search::-ms-input-placeholder {
+    color: #fff; }
+  .main-header__input-search::placeholder {
+    color: #fff; }
+  .main-header__input-search:hover {
+    background-color: #212a3a; }
+  .main-header__input-search:focus {
+    background-color: #fff; }
+
+.main-header__btn-bookmarks, .main-header__btn-case {
+  position: relative;
+  width: 150px;
+  height: 42px;
+  background-color: #293449;
+  border: 0;
+  outline: none;
+  font-family: "Cuprum";
+  color: #fff; }
+  .main-header__btn-bookmarks:hover, .main-header__btn-case:hover {
+    background-color: #212a3a; }
+  .main-header__btn-bookmarks:active, .main-header__btn-case:active {
+    background-color: #161d29;
+    opacity: 0.6; }
+
+.main-header__btn-bookmarks:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 17px;
+  width: 14px;
+  height: 16px;
+  background-image: url("../img/icon-bookmark.svg");
+  background-repeat: no-repeat; }
+
+.main-header__btn-bookmarks:hover:before {
+  opacity: 0.3; }
+
+.main-header__checkout {
+  display: block;
+  background-color: #63a63e;
+  color: #fff;
+  font-size: 17px;
+  line-height: 18px;
+  padding-top: 12px;
+  padding-left: 21px;
+  padding-right: 21px; }
+  .main-header__checkout:hover {
+    background-color: #5fbb2d; }
+  .main-header__checkout:active {
+    background-color: #518534;
+    opacity: 0.51; }
