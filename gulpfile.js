@@ -26,7 +26,7 @@ gulp.task('sass', function() {
   return gulp.src(styleScss)
     .pipe(sass())
     .pipe(autopref({
-      browsers: ['last 2 versions'],
+      overrideBrowserslist:  ['last 2 versions'],
       cascade: false
     })) 
     .pipe(gulp.dest(toCSS))
