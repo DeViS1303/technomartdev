@@ -31,6 +31,9 @@ body {
 a {
   text-decoration: none; }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
 .wrap {
   width: 940px;
   margin: 0 auto; }
@@ -42,8 +45,20 @@ a {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+
 .main-header {
-  background-color: #f3f7f9; }
+  background-color: #f3f7f9;
+  margin-bottom: 59px; }
 
 .main-header__top {
   background-color: #293449;
@@ -295,18 +310,23 @@ a {
   padding-right: 23px; }
 
 .main-nav {
-  width: 100%; }
+  width: 100%;
+  position: relative;
+  margin-bottom: 65px; }
+  .main-nav::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 55px;
+    width: 100%;
+    height: 5px;
+    background-color: #293449; }
 
 .main-nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   padding: 0;
-  padding-left: 52px;
-  padding-right: 55px;
   font-size: 17px;
   line-height: 17px;
   color: #fff;
@@ -314,6 +334,78 @@ a {
   background-color: #32425c;
   margin: 0; }
 
-.main-nav__item {
+.main-nav__item:nth-child(1) .main-nav__link {
+  padding-left: 50px;
+  padding-right: 32px; }
+
+.main-nav__item:nth-child(2) .main-nav__link {
+  padding-left: 32px;
+  padding-right: 30px; }
+
+.main-nav__item:nth-child(3) .main-nav__link {
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.main-nav__item:nth-child(4) .main-nav__link {
+  padding-left: 30px;
+  padding-right: 29px; }
+
+.main-nav__item:nth-child(5) .main-nav__link {
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.main-nav__item:nth-child(6) .main-nav__link {
+  padding-left: 30px;
+  padding-right: 32px; }
+
+.main-nav__item:nth-child(7) .main-nav__link {
+  padding-left: 32px;
+  padding-right: 54px; }
+
+.main-nav__link {
+  display: block;
+  color: #fff;
+  text-align: center;
+  outline: none;
   padding-top: 19px;
   padding-bottom: 19px; }
+  .main-nav__link:hover {
+    background-color: #293449; }
+  .main-nav__link:active {
+    background-color: #1d2739;
+    opacity: 0.5; }
+
+.promo {
+  color: #fff; }
+
+.offer__link {
+  color: #fff; }
+
+.offer {
+  width: 300px;
+  height: 123px; }
+
+.offer--materials {
+  background-color: #ffbf47;
+  margin-right: 20px;
+  margin-bottom: 20px; }
+
+.offer--tools {
+  background-color: #3bbce3;
+  margin-right: 20px; }
+
+.offer--machinery {
+  background-color: #dc91d8; }
+
+.offer--discount {
+  background-color: #8ed78f;
+  margin-bottom: 20px; }
+
+.offer--delivery {
+  background-color: #ffc047; }
+
+.banner {
+  width: 620px;
+  height: 266px;
+  background-color: #293449;
+  margin-right: 20px; }
