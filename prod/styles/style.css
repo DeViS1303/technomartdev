@@ -383,26 +383,99 @@ h1, h2, h3, h4, h5, h6 {
 
 .offer {
   width: 300px;
-  height: 123px; }
+  height: 123px;
+  border-top: 1px solid;
+  position: relative; }
+  .offer:before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-repeat: no-repeat; }
+
+.offer__title {
+  font-family: 'CuprumBold';
+  font-size: 24px;
+  line-height: 30px;
+  margin-left: 22px;
+  margin-top: 21px;
+  margin-bottom: 15px; }
+
+.offer__link {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 135px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border-radius: 3px;
+  margin-left: 25px;
+  background-color: rgba(0, 0, 0, 0.1); }
+  .offer__link:hover {
+    background-color: rgba(0, 0, 0, 0.2); }
+  .offer__link:active {
+    background-color: rgba(0, 0, 0, 0.3); }
 
 .offer--materials {
   background-color: #ffbf47;
   margin-right: 20px;
   margin-bottom: 20px; }
+  .offer--materials::before {
+    top: 31px;
+    right: 43px;
+    width: 44px;
+    height: 65px;
+    background-image: url("../img/icon-materials.svg"); }
 
 .offer--tools {
   background-color: #3bbce3;
   margin-right: 20px; }
+  .offer--tools::before {
+    top: 33px;
+    right: 28px;
+    width: 75px;
+    height: 61px;
+    background-image: url("../img/icon-tools.svg"); }
 
 .offer--machinery {
   background-color: #dc91d8; }
+  .offer--machinery::before {
+    top: 31px;
+    right: 31px;
+    width: 78px;
+    height: 62px;
+    background-image: url("../img/icon-machinery.svg"); }
 
 .offer--discount {
   background-color: #8ed78f;
   margin-bottom: 20px; }
+  .offer--discount::before {
+    top: 26px;
+    right: 45px;
+    width: 59px;
+    height: 72px;
+    background-image: url("../img/icon-discount.svg"); }
 
 .offer--delivery {
   background-color: #ffc047; }
+  .offer--delivery::before {
+    top: 32px;
+    right: 31px;
+    width: 80px;
+    height: 63px;
+    background-image: url("../img/icon-delivery.svg"); }
+
+.offer--new::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/icon-new.png");
+  background-repeat: no-repeat; }
 
 .banner {
   width: 620px;
