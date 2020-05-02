@@ -4,6 +4,7 @@ let gulp = require('gulp'),
   rename = require('gulp-rename'),
   sass = require('gulp-sass'),
   autopref = require('gulp-autoprefixer'),
+  comb  = require('gulp-csscomb'),
   minHTML = require('gulp-htmlclean');
 
 //Puth
@@ -29,6 +30,7 @@ gulp.task('sass', function() {
       overrideBrowserslist:  ['last 2 versions'],
       cascade: false
     })) 
+    .pipe(comb('csscomb.json'))
     .pipe(gulp.dest(toCSS))
     .pipe(minCSS())
     .pipe(rename('style.min.css'))
