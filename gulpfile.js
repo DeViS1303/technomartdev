@@ -18,7 +18,10 @@ let fromScss = 'dev/scss/**/*.scss',
 
 gulp.task('html', function() {
   return gulp.src(fromHTML)
+    .pipe(rename('index.map.html'))
+    .pipe(gulp.dest('prod/'))
     .pipe(minHTML())
+    .pipe(rename('index.html'))
     .pipe(gulp.dest('prod/'))
     .pipe(browserSync.stream());
 });
