@@ -5,6 +5,7 @@ let gulp = require('gulp'),
   sass = require('gulp-sass'),
   autopref = require('gulp-autoprefixer'),
   comb  = require('gulp-csscomb'),
+  imagemin = require('gulp-imagemin'),
   minHTML = require('gulp-htmlclean');
 
 //Puth
@@ -34,11 +35,18 @@ gulp.task('sass', function() {
       cascade: false
     })) 
     .pipe(comb('csscomb.json'))
+    .pipe(rename('style.map.css'))
     .pipe(gulp.dest(toCSS))
     .pipe(minCSS())
-    .pipe(rename('style.min.css'))
+    .pipe(rename('style.css'))
     .pipe(gulp.dest(toMinCSS))
     .pipe(browserSync.stream());
+});
+
+gulp.task('img', function() {
+  return gulp.src('dev/img/*')
+  .pipe(imagemin())
+  .pipe(gulp.dest('prod/img'))
 });
 
 gulp.task('serve', function() {
@@ -51,4 +59,4 @@ gulp.task('serve', function() {
   gulp.watch(fromHTML, gulp.parallel('html'));
 });
   
-gulp.task('default', gulp.series('html','sass','serve'));
+gulp.task('default', gulp.series('html','sass','img','serve'));

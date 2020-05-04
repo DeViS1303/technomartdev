@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technomart</title>
-    <link rel="stylesheet" href="styles/style.min.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header class="main-header">
             <div class="main-header__top">
-                <div class="wrap flexbox">
+                <div class="_wrap _flexbox">
                     <h1 class="main-header__title">
                         <a href="#" class="main-header__link-title">Техномарт</a>
                     </h1>
@@ -35,7 +35,7 @@
             
         </div>
         
-        <div class="wrap flexbox">
+        <div class="_wrap _flexbox">
             <p class="main-header__preview">
                 Интернет-магазин
                 строительных материалов
@@ -78,10 +78,10 @@
 
     <main>
         <section class="offer">
-            <div class="wrap">
-                <h2 class="visually-hidden">Промо</h2>
-                <div class="flexbox">
-                    <div class="offer__item offer__item--materials offer__item--new">
+            <div class="_wrap">
+                <h2 class="_visually-hidden">Промо</h2>
+                <div class="_flexbox">
+                    <div class="offer__item offer__item--materials _new-icon">
                         <h3 class="offer__title">Материалы</h3>
                         <a href="#" class="offer__btn">На любой вкус</a>
                     </div>
@@ -94,8 +94,8 @@
                         <a href="#" class="offer__btn">для стройки</a>
                     </div>
                 </div>
-                <div class="flexbox">
-                    <div  class="offer__banner banner banner--drill visually-hidden">
+                <div class="_flexbox">
+                    <div  class="offer__banner banner banner--drill _visually-hidden">
                         <h2 class="banner__title">дрели</h2>
                         <p>Соседям на радость</p>
                         <a href="#" class="main-btn banner__btn">открыть каталог</a>
@@ -121,39 +121,39 @@
         </section>
 
         <section class="popular-goods">
-            <div class="wrap">
-                <div class="popular-header">
+            <div class="_wrap">
+                <div class="popular-header popular-goods__header">
                     <h2 class="popular-header__title">Популярные товары:</h2>
                     <a href="#" class="main-btn popular-header__btn">все популярные товары</a>
                 </div>
                 
-                <ul>
-                    <li>
-                        <img src="#" alt="перфоратор">
-                        <h3>Перфоратор BOSCH
+                <ul class="popular-goods__list">
+                    <li class="popular-goods__item">
+                        <img src="../img/goods_1.jpg" alt="перфоратор">
+                        <h3 class="popular-goods__name">Перфоратор BOSCH
                             BFG 9000</h3>
-                        <p>32500 Р.</p>
-                        <p>25500 Р.</p>
+                        <p class="popular-goods__before-discount">32500 Р.</p>
+                        <p class="popular-goods__price">25500 Р.</p>
                     </li>
-                    <li>
-                        <img src="#" alt="перфоратор">
-                        <h3>Перфоратор BOSCH
+                    <li class="popular-goods__item">
+                        <img src="../img/goods_2.jpg" alt="перфоратор">
+                        <h3 class="popular-goods__name">Перфоратор BOSCH
                             BFG 3000</h3>
-                        <p>22500 Р.</p>
-                        <p>15500 Р.</p>
+                        <p class="popular-goods__before-discount">22500 Р.</p>
+                        <p class="popular-goods__price">15500 Р.</p>
                     </li>
-                    <li>
-                        <img src="#" alt="перфоратор">
-                        <h3>Перфоратор BOSCH
+                    <li class="popular-goods__item">
+                        <img src="../img/goods_3.jpg" alt="перфоратор">
+                        <h3 class="popular-goods__name">Перфоратор BOSCH
                             BFG 6000</h3>
-                        <p>30500 Р.</p>
-                        <p>25500 Р.</p>
+                        <p class="popular-goods__before-discount">30500 Р.</p>
+                        <p class="popular-goods__price">25500 Р.</p>
                     </li>
-                    <li>
-                        <img src="#" alt="перфоратор">
-                        <h3>Перфоратор BOSCH
+                    <li class="popular-goods__item _new-icon">
+                        <img src="../img/goods_4.jpg" alt="перфоратор">
+                        <h3 class="popular-goods__name">Перфоратор BOSCH
                             BFG 2000</h3>
-                        <p>12500 Р.</p>
+                        <p class="popular-goods__price">12500 Р.</p>
                     </li>
                 </ul>
             </div>
@@ -161,9 +161,9 @@
         </section>
 
         <section class="popular-brands">
-            <div class="wrap">
-                <div class="popular-header">
-                    <h2 class="popular-header__title">Популярные производители</h2>
+            <div class="_wrap">
+                <div class="popular-header popular-brands__header">
+                    <h2 class="popular-header__title">Популярные производители:</h2>
                     <a href="#" class="main-btn popular-header__btn">все производители</a>
                 </div>
                 
@@ -199,7 +199,7 @@
         </section>
 
         <section class="services">
-            <div class="wrap">
+            <div class="_wrap">
                 <h2 class="services__title">Сервисы</h2>
                 <p class="services__tagline">Хороший интернет-магазин отличается от плохого не только ценами!
                                             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
@@ -234,8 +234,8 @@
         </section>
 
         <section class="about-us">
-            <div class="wrap">
-                <h2 class="about-us__title visually-hidden">Всё про компанию</h2>
+            <div class="_wrap">
+                <h2 class="about-us__title _visually-hidden">Всё про компанию</h2>
                 <div class="informations about-us__informations">
                     <h3 class="informations__title">Компания "Техномарт"</h3>
                     <p class="informations__tagline">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта 
@@ -264,7 +264,7 @@
 
     <footer class="main-footer">
         <div class="main-footer--top">
-            <div class="wrap">
+            <div class="_wrap">
                 <h2 class="main-footer__logo">Техномарт</h2>
                 <p class="main-footer__contact">
                     г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
@@ -286,7 +286,7 @@
         </div>
         
         <div class="feedback main-footer__feedback">
-            <div class="wrap">
+            <div class="_wrap">
                 <p class="feedback__copyright">
                     © 2010–2017 Компания «Техномарт»
                     Все права защищены
