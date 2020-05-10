@@ -1190,6 +1190,7 @@ h6
         flex-wrap: wrap; 
 
     margin: 0;
+    margin-bottom: 85px;
     padding: 0;
 
     list-style: none;
@@ -1246,4 +1247,67 @@ h6
     align-self: center;
 
     margin: 0 auto;
+}
+
+.services
+{
+    padding-top: 65px;
+
+    background-color: #f4f7f9;
+}
+
+.services__title
+{
+    font-family: 'Cuprum';
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 30px;
+
+    margin-bottom: 30px;
+}
+
+.services__tagline
+{
+    font-family: 'PT-Sans';
+    font-size: 13px;
+    line-height: 24px;
+
+    margin: 0;
+    margin-bottom: 75px;
+}
+
+.services__list
+{
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.services__item
+{
+    font-family: 'CuprumBold';
+    font-size: 21px;
+    line-height: 30px;
+
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 240px;
+    padding-top: 16px;
+    padding-bottom: 22px;
+    padding-left: 25px;
+
+    color: #fff;
+    border-top: 1px solid #4d627b; 
+    background-color: #32425c;
+}
+.services__item:nth-child(1)
+{
+    border: none;
+}
+
+.services__item--active
+{
+    color: #32425c; 
+    background-color: #fff;
 }
