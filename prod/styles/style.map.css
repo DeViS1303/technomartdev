@@ -1251,6 +1251,7 @@ h6
 
 .services
 {
+    margin-bottom: 75px;
     padding-top: 65px;
 
     background-color: #f4f7f9;
@@ -1278,6 +1279,8 @@ h6
 
 .flex-wrap
 {
+    position: relative; 
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1337,4 +1340,169 @@ h6
 {
     color: #32425c; 
     background-color: #fff;
+}
+
+.services__elem::before
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: block;
+
+    content: '';
+
+    background-repeat: no-repeat;
+}
+
+.services__elem--delivery::before
+{
+    width: 468px;
+    height: 261px;
+
+    background-image: url('../img/delivery.png');
+}
+
+.services__elem--guarantee::before
+{
+    width: 389px;
+    height: 283px;
+
+    background-image: url('../img/guarantee.png');
+}
+
+.services__elem--credit::before
+{
+    width: 465px;
+    height: 265px;
+
+    background-image: url('../img/credit.png');
+}
+
+.services__service-name
+{
+    font-family: 'CuprumBold';
+    font-style: 36px;
+    line-height: 36px;
+
+    margin-bottom: 30px; 
+
+    text-transform: uppercase;
+
+    color: #32425c;
+}
+
+.services__description
+{
+    font-family: 'PT-Sans';
+    font-size: 13px;
+    line-height: 24px;
+
+    margin: 0;
+    margin-bottom: 30px; 
+
+    color: #000;
+}
+
+.services__credit-btn
+{
+    width: 195px;
+}
+
+.about-us_container
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.about-us__informations
+{
+    width: 520px;
+    margin-right: 120px;
+}
+
+.informations__title,
+.contacts__title
+{
+    font-family: 'Cuprum';
+    font-size: 30px;
+    line-height: 30px;
+
+    margin-bottom: 30px;
+}
+
+.informations__tagline,
+.informations__offer,
+.contacts__tagline
+{
+    font-family: 'PT-Sans';
+    font-size: 13px;
+    line-height: 24px;
+
+    margin: 0;
+    margin-bottom: 35px;
+}
+
+.informations__offer
+{
+    margin-bottom: 24px;
+}
+
+.informations__list
+{
+    font-family: 'Cuprum';
+    font-size: 18px;
+    line-height: 20px;
+
+    margin: 0;
+    margin-bottom: 40px; 
+    padding: 0;
+    padding-left: 35px;
+
+    list-style-type: none;
+}
+
+.informations__item
+{
+    position: relative; 
+
+    margin-bottom: 15px;
+}
+.informations__item:last-child
+{
+    margin-bottom: 0;
+}
+.informations__item::before
+{
+    position: absolute;
+    bottom: 5px;
+    left: -35px;
+
+    display: block;
+
+    width: 25px;
+    height: 2px;
+
+    content: '';
+
+    background-color: #ee3643; 
+    background-repeat: no-repeat;
+}
+
+.informations__btn
+{
+    width: 220px;
+}
+
+.contacts__map
+{
+    margin-bottom: 40px;
+}
+
+.contacts__btn
+{
+    width: 300px;
+
+    border: none;
 }
