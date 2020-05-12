@@ -11,7 +11,7 @@
             <div class="main-header__top">
                 <div class="_wrap _flexbox">
                     <h1 class="main-header__title">
-                        <a href="#" class="main-header__link-title">Техномарт</a>
+                        <a href="#" class="_logo-link main-header__link-title ">Техномарт</a>
                     </h1>
 
                     <form action="" method="get" class="main-header__search-form">
@@ -35,7 +35,7 @@
             
         </div>
         
-        <div class="_wrap _flexbox">
+        <div class="_wrap _flexbox main-header_container">
             <p class="main-header__preview">
                 Интернет-магазин
                 строительных материалов
@@ -290,31 +290,40 @@
 
     <footer class="main-footer">
         <div class="main-footer--top">
-            <div class="_wrap">
-                <h2 class="main-footer__logo">Техномарт</h2>
-                <p class="main-footer__contact">
-                    г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                    +7 (812) 555-05-55
-                </p>
-                <ul class="main-footer__nuv-list">
-                    <li class="main-footer__nuv-item">Компания</li>
-                    <li class="main-footer__nuv-item">Новости</li>
-                    <li class="main-footer__nuv-item">Каталог</li>
-                    <li class="main-footer__nuv-item">Доставка</li>
-                    <li class="main-footer__nuv-item">Контакты</li>
-                    <li class="main-footer__nuv-item">Материалы</li>
-                    <li class="main-footer__nuv-item">Техника</li>
-                    <li class="main-footer__nuv-item">Инструмент</li>
-                    <li class="main-footer__nuv-item">Спецпредложения</li>
-                </ul>   
+            <div class="_wrap _flexbox main-footer__container">
+                <div>
+                    <h2 class="main-footer__logo">
+                        <a href="#" class="_logo-link main-footer__link-title ">Техномарт</a>
+                    </h2>
+                    <p class="main-footer__contact">
+                        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                        +7 (812) 555-05-55
+                    </p>
+                </div>
+
+                <div>
+                    <ul class="main-footer__nuv-list">
+                        <li class="main-footer__nuv-item">Компания</li>
+                        <li class="main-footer__nuv-item">Новости</li>
+                        <li class="main-footer__nuv-item">Каталог</li>
+                        <li class="main-footer__nuv-item">Доставка</li>
+                        <li class="main-footer__nuv-item">Контакты</li>
+                    </ul>     
+                    <ul class="main-footer__offer-list">
+                        <li class="main-footer__offer-item">Материалы</li>
+                        <li class="main-footer__offer-item">Техника</li>
+                        <li class="main-footer__offer-item">Инструмент</li>
+                        <li class="main-footer__offer-item">Спецпредложения</li>
+                    </ul> 
+                </div> 
             </div>
                                                   
         </div>
         
         <div class="feedback main-footer__feedback">
-            <div class="_wrap">
+            <div class="_wrap _flexbox">
                 <p class="feedback__copyright">
-                    © 2010–2017 Компания «Техномарт»
+                    © 2010–2017 Компания «Техномарт»<br>
                     Все права защищены
                 </p>
                 <ul class = "feedback__social-list">
