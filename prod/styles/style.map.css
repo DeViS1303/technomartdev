@@ -1,3 +1,4 @@
+@charset 'UTF-8';
 @import url(normolize.css);
 @font-face
 {
@@ -75,6 +76,8 @@ h6
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+
+    min-width: 0;
 }
 
 ._visually-hidden
@@ -154,7 +157,7 @@ h6
     background-color: #b52933;
 }
 
-.modal-wrap
+.modal__wrap
 {
     position: fixed;
     z-index: 999; 
@@ -176,6 +179,13 @@ h6
     height: 100%;
 }
 
+.modal-open
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
 .modal__close-btn
 {
     font-size: 0;
@@ -187,9 +197,10 @@ h6
     width: 21px;
     height: 21px;
 
-    cursor: pointer; 
+    cursor: pointer;
 
     border: none;
+    outline: none; 
     background-color: rgba(255, 255, 255, 0);
 }
 .modal__close-btn::before,
@@ -872,7 +883,7 @@ h6
     background-repeat: no-repeat;
 }
 
-.offer__banner
+.offer__slider
 {
     margin-right: 20px;
 }
@@ -949,6 +960,65 @@ h6
 .banner--drill
 {
     background-image: url('../img/banner-drill.jpg');
+}
+
+.slider-banner
+{
+    position: relative; 
+
+    min-width: 0;
+}
+
+/* Слайдер */
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list
+{
+    overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+/* Активная точка */
+/* Элемент точки */
+.slider-banner .slick-arrow
+{
+    position: absolute;
+}
+
+.slider-banner .slick-prev
+{
+    z-index: 100; 
+    top: 0;
+    left: 0;
+}
+
+.slider-banner .slick-next
+{
+    top: 0;
+    right: 0;
+}
+
+.slider-banner .slick-list
+{
+    width: 620px;
 }
 
 .popular-goods
@@ -1784,6 +1854,10 @@ h6
     outline: none;
     background-color: #212a3a;
 }
+.feedback__social-link:visited
+{
+    background-color: #212a3a;
+}
 .feedback__social-link:hover,
 .feedback__social-link:focus,
 .feedback__social-link:active
@@ -1824,13 +1898,6 @@ h6
 .feedback__site-link
 {
     margin: 0;
-}
-
-.modal-writeUs--open
-{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
 }
 
 .modal-writeUs
@@ -1960,13 +2027,7 @@ h6
     width: 460px;
 
     border: none;
-}
-
-.modal-map--open
-{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    outline: none;
 }
 
 .modal-map

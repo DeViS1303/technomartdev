@@ -6,7 +6,9 @@ let gulp = require('gulp'),
   autopref = require('gulp-autoprefixer'),
   comb  = require('gulp-csscomb'),
   imagemin = require('gulp-imagemin'),
-  minHTML = require('gulp-htmlclean');
+  minHTML = require('gulp-htmlclean'),
+  uglify = require('gulp-uglify'),
+  pipeline = require('readable-stream').pipeline;
 
 //Puth
 let fromScss = 'dev/scss/**/*.scss',
@@ -14,6 +16,8 @@ let fromScss = 'dev/scss/**/*.scss',
     toCSS = 'prod/styles/',
     toMinCSS = 'prod/styles/',
     fromHTML = 'dev/*.html',
+    fromJS = 'dev/js/*.js',
+    toMinJS = 'prod/js/',
     toMinHTML = 'prod/';
 
 
@@ -50,6 +54,21 @@ gulp.task('img', function() {
   .pipe(browserSync.stream());
 });
 
+gulp.task('compress', function () {
+  return pipeline(
+        gulp.src('dev/js/script.js'),
+        rename('script.map.js'),
+        gulp.dest(toMinJS),
+        uglify(),
+        rename('script.js'),
+        gulp.dest(toMinJS),
+        gulp.src(fromJS),
+        uglify(),
+        gulp.dest(toMinJS),
+        browserSync.stream()
+  );
+});
+
 gulp.task('serve', function() {
 
   browserSync.init({
@@ -58,6 +77,7 @@ gulp.task('serve', function() {
       
   gulp.watch(fromScss, gulp.parallel('sass'));
   gulp.watch(fromHTML, gulp.parallel('html'));
+  gulp.watch(fromJS, gulp.parallel('compress'));
 });
   
-gulp.task('default', gulp.series('html','sass','img','serve'));
+gulp.task('default', gulp.series('html','sass','img','compress','serve'));
