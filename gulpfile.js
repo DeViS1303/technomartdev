@@ -15,18 +15,24 @@ let fromScss = 'dev/scss/**/*.scss',
     styleScss = 'dev/scss/style.scss',
     toCSS = 'prod/styles/',
     toMinCSS = 'prod/styles/',
-    fromHTML = 'dev/*.html',
+    fromHTML = 'dev/',
     fromJS = 'dev/js/*.js',
     toMinJS = 'prod/js/',
     toMinHTML = 'prod/';
 
 
 gulp.task('html', function() {
-  return gulp.src(fromHTML)
+  return gulp.src(fromHTML + "index.html")
     .pipe(rename('index.map.html'))
-    .pipe(gulp.dest('prod/'))
+    .pipe(gulp.dest('prod/map_html'))
     .pipe(minHTML())
     .pipe(rename('index.html'))
+    .pipe(gulp.dest('prod/'))
+    .pipe(gulp.src(fromHTML + "catalog.html"))
+    .pipe(rename('catalog.map.html'))
+    .pipe(gulp.dest('prod/map_html'))
+    .pipe(minHTML())
+    .pipe(rename('catalog.html'))
     .pipe(gulp.dest('prod/'))
     .pipe(browserSync.stream());
 });
