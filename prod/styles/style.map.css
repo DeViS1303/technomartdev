@@ -42,6 +42,14 @@
     src: url('../fonts/PT-SansBold.woff2') format('woff2'), url('../fonts/PT-SansBold.woff') format('woff');
 }
 
+*,
+*::before,
+*::after
+{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
 body
 {
     font-family: 'Cuprum';
@@ -958,10 +966,14 @@ h6
 /*  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\---_MAIN PAGE_---\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.index-header
+{
+    margin-bottom: 59px;
+}
+
 .offer
 {
     margin-bottom: 55px; 
-    padding-top: 59px;
 
     color: #fff;
 }
@@ -1763,6 +1775,33 @@ h6
 /*  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\---_CATALOG PAGE_---\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.catalog__header
+{
+    margin-bottom: 22px;
+}
+
+.main__bread-crumbs
+{
+    margin-bottom: 25px;
+}
+
+.main__title
+{
+    font-family: 'CuprumBold';
+    font-size: 30px;
+    line-height: 30px;
+
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+
+    text-transform: uppercase; 
+
+    color: #32425c;
+    background-color: #f1f5f7;
+}
+
 .bread-crumbs
 {
     font-family: 'PT-Sans';
@@ -1780,7 +1819,6 @@ h6
 
     margin: 0;
     padding: 0;
-    padding-top: 22px;
 
     list-style-type: none;
 }
@@ -1830,6 +1868,132 @@ h6
 .bread-crumbs__link--disable
 {
     pointer-events: none;
+}
+
+.main-form
+{
+    max-width: 220px;
+    margin-right: 20px;
+}
+
+.main-form__title
+{
+    font-family: 'PT-Sans';
+    font-size: 13px;
+    line-height: 18px;
+
+    width: 220px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 17px;
+
+    text-transform: uppercase; 
+
+    border-radius: 2px;
+    background-color: #f7f2ec;
+}
+
+.price__title
+{
+    font-family: 'PT-SansBold';
+    font-size: 17px;
+    line-height: 30px;
+
+    margin-bottom: 20px;
+
+    text-transform: uppercase;
+}
+
+.price__range
+{
+    position: relative;
+
+    width: 220px;
+    height: 80px;
+    margin-bottom: 10px;
+
+    border-radius: 2px;
+    background-color: #f7f2ec;
+}
+
+.price__max-range,
+.price__active-range
+{
+    position: absolute;
+    top: 39px;
+    left: 20px;
+
+    width: 180px;
+    height: 2px;
+
+    background-color: #d7dbdd;
+}
+
+.price__min-point,
+.price__max-point
+{
+    position: absolute;
+    z-index: 2;
+    top: 30px;
+    left: 20px;
+
+    width: 20px;
+    height: 20px;
+
+    border: 8px solid #fff;
+    border-radius: 50%; 
+    background-color: #b1b1b1;
+    -webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .57);
+            box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .57);
+}
+
+.price__active-range
+{
+    left: 30px;
+
+    width: 142px;
+
+    background-color: #00ca74;
+}
+
+.price__max-point
+{
+    left: 162px;
+}
+
+.price__min-val,
+.price__max-val
+{
+    font-family: 'PT-Sans';
+    font-size: 17px;
+    line-height: 18px;
+
+    width: 95px;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    text-align: center; 
+
+    border: none;
+    border-radius: 2px;
+    background-color: #f7f2ec;
+}
+
+.price__dah
+{
+    width: 10px;
+    height: 1px;
+    margin-top: 18px;
+    margin-right: 10px;
+
+    background-color: #000;
+}
+
+.price__max-val
+{
+    margin: 0;
 }
 
 /*  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
