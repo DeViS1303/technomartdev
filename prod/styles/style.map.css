@@ -1870,10 +1870,40 @@ h6
     pointer-events: none;
 }
 
+/*  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\---_ADDITIONAL CLASSES_---\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+._title-forms
+{
+    font-family: 'PT-SansBold';
+    font-size: 17px;
+    line-height: 30px;
+
+    text-transform: uppercase;
+}
+
+._horiz-strip
+{
+    width: 100%;
+    height: 1px;
+    margin-bottom: 15px;
+
+    background-color: #f7f2ec;
+}
+
+/*  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 .main-form
 {
+    font-family: 'PT-Sans';
+    font-size: 15px;
+    line-height: 20px;
+
     max-width: 220px;
     margin-right: 20px;
+
+    text-transform: uppercase;
 }
 
 .main-form__title
@@ -1894,15 +1924,14 @@ h6
     background-color: #f7f2ec;
 }
 
+.main-form__price
+{
+    margin-bottom: 25px;
+}
+
 .price__title
 {
-    font-family: 'PT-SansBold';
-    font-size: 17px;
-    line-height: 30px;
-
     margin-bottom: 20px;
-
-    text-transform: uppercase;
 }
 
 .price__range
@@ -1994,6 +2023,149 @@ h6
 .price__max-val
 {
     margin: 0;
+}
+
+.main-form__manufacturers
+{
+    margin-bottom: 25px;
+}
+
+.manufacturers__title
+{
+    margin-bottom: 15px;
+}
+
+.manufacturers__list,
+.power-supply__list
+{
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.manufacturers__item,
+.power-supply__item
+{
+    margin-bottom: 15px;
+}
+.manufacturers__item:last-child,
+.power-supply__item:last-child
+{
+    margin-bottom: 0;
+}
+
+.manufacturers__label
+{
+    -webkit-box-align: center;
+    align-items: center; 
+    -ms-flex-align: center;
+}
+
+.manufacturers__input:checked + .manufacturers__check-icon
+{
+    width: 27px;
+    margin-right: 8px;
+
+    background-image: url(../img/checkbox-on.svg);
+}
+
+.manufacturers__check-icon
+{
+    width: 23px;
+    height: 23px;
+    margin-right: 12px;
+
+    background-image: url(../img/checkbox-off.svg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+.manufacturers__check-icon:hover
+{
+    opacity: .6;
+}
+
+.main-form__power-supply
+{
+    margin-bottom: 75px;
+}
+
+.power-supply__title
+{
+    margin-bottom: 13px;
+}
+
+.power-supply__label
+{
+    -webkit-box-align: center;
+    align-items: center; 
+    -ms-flex-align: center;
+}
+
+.power-supply__input:checked + .power-supply__radio-btn div
+{
+    display: block;
+}
+
+.power-supply__radio-btn
+{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+
+    border: 4px solid #c5c5c5;
+    border-radius: 50%;
+}
+.power-supply__radio-btn:hover
+{
+    border-color: #b5b5b5;
+}
+.power-supply__radio-btn:hover div
+{
+    background-color: #b5b5b5;
+}
+.power-supply__radio-btn div
+{
+    display: none;
+
+    width: 9px;
+    height: 9px;
+    margin-top: 4px;
+    margin-left: 4px;
+
+    border: none;
+    border-radius: 50%;
+    background-color: #c5c5c5;
+}
+
+.main-form__btn
+{
+    font-family: 'PT-Sans';
+    font-size: 13px;
+    line-height: 18px;
+
+    width: 140px;
+    height: 38px;
+
+    text-transform: uppercase; 
+
+    border: 1px solid #e5e5e5;
+    outline: none;
+    background-color: #fff;
+}
+.main-form__btn:hover
+{
+    border-color: #8c8c8c;
+    background-color: #f8f8f8;
+    -webkit-box-shadow: 0 0 10px 1px #c5c5c5;
+            box-shadow: 0 0 10px 1px #c5c5c5;
+}
+.main-form__btn:focus
+{
+    border-color: #8c8c8c;
+    background-color: #f8f8f8;
+    -webkit-box-shadow: 0 0 10px 1px #c5c5c5;
+            box-shadow: 0 0 10px 1px #c5c5c5;
 }
 
 /*  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\

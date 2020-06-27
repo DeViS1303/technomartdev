@@ -114,7 +114,7 @@
                     <form action="#" class="main-form__wrap">
                         <h2 class="main-form__title">Фильтр:</h2>
                         <div class="main-form__price price">
-                            <h3 class="price__title">Цена:</h3>
+                            <h3 class="price__title _title-forms">Цена:</h3>
                             <div class="price__range">
                                 <div class="price__max-range"></div>
                                 <div class="price__min-point"></div>
@@ -122,23 +122,82 @@
                                 <div class="price__max-point"></div>
                             </div>
                             <div class="_flexbox">
-                                <input class="price__min-val">
+                                <input class="price__min-val" value="0">
                                 <div class="price__dah"></div>
-                                <input class="price__max-val">
+                                <input class="price__max-val" value="30000">
                             </div>
                         </div>
-                        <div class="main-form__manufacturers manufacturers">
-                            <h3 class="manufacturers__title">Производители:</h3>
-                            <input type="checkbox" name="manufacturer" class="manufacturers__elem" value="Bosh">Bosh
-                            <input type="checkbox" name="manufacturer" class="manufacturers__elem" value="Interscol">Интерскол
-                            <input type="checkbox" name="manufacturer" class="manufacturers__elem" value="Makita">Makita
-                            <input type="checkbox" name="manufacturer" class="manufacturers__elem" value="Dewalt">Dewalt
-                            <input type="checkbox" name="manufacturer" class="manufacturers__elem" value="Hitachi">Hitachi
+
+                        <div class="_horiz-strip">
                         </div>
+
+                        <div class="main-form__manufacturers manufacturers">
+                            <h3 class="manufacturers__title _title-forms">Производители:</h3>
+                            <ul class="manufacturers__list">
+                                <li class="manufacturers__item">
+                                    <label class="manufacturers__label _flexbox">
+                                        <input type="checkbox" name="manufacturer" class="manufacturers__input _visually-hidden" value="Bosh"> 
+                                        <div class="manufacturers__check-icon"></div>
+                                        <span>Bosh</span> 
+                                    </label>
+                                </li>
+                                <li class="manufacturers__item">
+                                    <label class="manufacturers__label _flexbox">
+                                        <input type="checkbox" name="manufacturer" class="manufacturers__input _visually-hidden" value="Interscol"> 
+                                        <div class="manufacturers__check-icon"></div>
+                                        <span>Интерскол</span> 
+                                    </label>
+                                </li>
+                                <li class="manufacturers__item">
+                                    <label class="manufacturers__label _flexbox">
+                                        <input type="checkbox" name="manufacturer" class="manufacturers__input _visually-hidden" value="Makita"> 
+                                        <div class="manufacturers__check-icon"></div>
+                                        <span>Makita</span>
+                                    </label> 
+                                </li>
+                                <li class="manufacturers__item">
+                                    <label class="manufacturers__label _flexbox">
+                                        <input type="checkbox" name="manufacturer" class="manufacturers__input _visually-hidden" value="Dewalt"> 
+                                        <div class="manufacturers__check-icon">
+                                        </div>
+                                        <span>Dewalt</span> 
+                                    </label>
+                                </li>
+                                <li class="manufacturers__item">
+                                    <label class="manufacturers__label _flexbox">
+                                        <input type="checkbox" name="manufacturer" class="manufacturers__input _visually-hidden" value="Hitachi"> 
+                                        <div class="manufacturers__check-icon">
+                                        </div>
+                                        <span>Hitachi</span>
+                                    </label> 
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="_horiz-strip"></div>
+
                         <div class="main-form__power-supply power-supply">
-                            <h3 class="power-supply__title"></h3>
-                            <input type="radio" name="power-supply" class="power-supply__elem">Аккумуляторные
-                            <input type="radio" name="power-supply" class="power-supply__elem">Сетевые
+                            <h3 class="power-supply__title _title-forms">Питание:</h3>
+                            <ul class="power-supply__list">
+                                <li class="power-supply__item">
+                                    <label class="power-supply__label _flexbox">
+                                        <input type="radio" name="power-supply" class="power-supply__input _visually-hidden">
+                                        <div class="power-supply__radio-btn">
+                                            <div></div>
+                                        </div>
+                                        <span>Аккумуляторные</span>
+                                    </label>
+                                </li>
+                                <li class="power-supply__item">
+                                    <label class="power-supply__label _flexbox">
+                                        <input type="radio" name="power-supply" class="power-supply__input _visually-hidden">
+                                        <div class="power-supply__radio-btn">
+                                            <div></div>
+                                        </div>
+                                        <span>Сетевые</span>
+                                    </label>
+                                </li>
+                            </ul>
                         </div>
     
                         <button class="main-form__btn">Показать</button>
