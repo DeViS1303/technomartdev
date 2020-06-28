@@ -2168,6 +2168,141 @@ h6
             box-shadow: 0 0 10px 1px #c5c5c5;
 }
 
+.catalog__sort
+{
+    margin-bottom: 20px;
+}
+
+.sort
+{
+    font-family: 'PT-Sans';
+    font-size: 13px;
+    line-height: 18px;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 17px;
+
+    text-transform: uppercase; 
+
+    background-color: #f7f2ec;
+}
+
+.sort__title
+{
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit; 
+
+    margin-right: 135px;
+}
+
+.sort__link
+{
+    display: block;
+
+    color: rgba(0, 0, 0, .3); 
+    border-bottom: 1px dashed #ee3643;
+    outline: none;
+}
+.sort__link:hover,
+.sort__link:focus
+{
+    color: black;
+    border-bottom-style: solid;
+}
+.sort__link:active
+{
+    color: #ee3643;
+}
+
+.sort__link--price
+{
+    margin-right: 70px;
+}
+
+.sort__link--type
+{
+    margin-right: 65px;
+}
+
+.sort__link--func
+{
+    margin-right: 45px;
+}
+
+.sort__up,
+.sort__down
+{
+    width: 0;
+    height: 0;
+    margin-right: 21px;
+    padding: 0;
+
+    border: none;
+    border-right: 7px solid transparent;
+    border-bottom: 14px solid rgba(0, 0, 0, .3);
+    border-left: 7px solid transparent;
+    outline: none;
+}
+.sort__up:hover,
+.sort__down:hover,
+.sort__up:focus,
+.sort__down:focus
+{
+    border-bottom-color: black;
+}
+.sort__up:active,
+.sort__down:active
+{
+    border-bottom-color: #ee3643;
+}
+
+.sort__down
+{
+    margin-right: 17px;
+
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+
+.catalog-perforator__products
+{
+    margin-bottom: 50px;
+}
+
+.product-list
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.product-list__item
+{
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.product-list__item:nth-child(3n)
+{
+    margin-right: 0;
+}
+.product-list__item:nth-last-child(-n+3)
+{
+    margin-bottom: 0;
+}
+
 /*  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\---_FOOTER_---\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
