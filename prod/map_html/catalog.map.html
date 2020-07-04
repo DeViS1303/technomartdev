@@ -34,7 +34,7 @@
                         </form>
 
                         <button class="main-header__btn-bookmarks">Закладки: <span class="main-header__bookmarks-value">0</span></button>
-                        <button class="main-header__btn-case">Корзина: <span class="main-header__case-value">0</span></button>
+                        <button class="main-header__btn-case">Корзина: <span class="main-header__case-value">10</span></button>
                         <a href="#" class="main-header__checkout">Оформить заказ</a>
                     </div>
                 
@@ -85,9 +85,9 @@
 ////////////////////////////////-----CONTENT-----////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////. -->
 
-        <main class="catalog__main main _wrap">
+        <main class="catalog__main main">
 
-            <section class=" main__bread-crumbs bread-crumbs">
+            <section class=" main__bread-crumbs bread-crumbs _wrap">
                 <ul class="bread-crumbs__list">
                     <li class="bread-crumbs__elem">
                         <a href="index.html" class="bread-crumbs__link">
@@ -107,9 +107,9 @@
             </section>
 
             
-            <h1 class="main__title">Перфораторы</h1>
+            <h1 class="main__title _wrap">Перфораторы</h1>
             
-            <div class="_flexbox">
+            <div class="_flexbox _wrap">
                 <section class="catalog__form main-form">
                     <form action="#" class="main-form__wrap">
                         <h2 class="main-form__title">Фильтр:</h2>
@@ -206,7 +206,7 @@
                 <div>
                     <section class="catalog__sort sort">
                         <h2 class="sort__title">Сортировка:</h2>
-                        <a href="#" class="sort__link sort__link--price">По цене</a>
+                        <a href="#" class="sort__link sort__link--price sort__link--active-sort">По цене</a>
                         <a href="#" class="sort__link sort__link--type">По типу</a>
                         <a href="#" class="sort__link sort__link--func">По функционалу</a>
                         <button class="sort__up"></button>
@@ -294,23 +294,27 @@
                             </li>
                         </ul>
                     </section>
-                    <ul class="catalog-perforator__pages pagination-list">
-                        <li class="pagination-list__item">1</li>
-                        <li class="pagination-list__item">2</li>
-                        <li class="pagination-list__item">3</li>
-                        <li class="pagination-list__item">Слудующая</li>
-                    </ul>
+                    <section class="catalog-perforator">
+                        <ul class="catalog-perforator__pages pagination-list">
+                            <li class="pagination-list__item"><a href="#" class="pagination-list__link pagination-list__link--disable">1</a></li>
+                            <li class="pagination-list__item"><a href="#" class="pagination-list__link">2</a></li>
+                            <li class="pagination-list__item"><a href="#" class="pagination-list__link">3</a></li>
+                            <li class="pagination-list__item"><a href="#" class="pagination-list__link">Слудующая</a></li>
+                        </ul>
+                    </section>
                 </div>
             </div>    
     
-                <section class="about-of-perforators _wrap">
+            <section class="about-of-perforators">
+                <div class="_wrap">
                     <h2 class="about-of-perforators__title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
                     <p class="about-of-perforators__description">
-                        Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
-                        Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
+                        Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. <br>
+                        Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. <br>
                         В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
                     </p>
-                </section>
+                </div>
+            </section>
             
         </main>
 
@@ -390,6 +394,10 @@
                 </div>       
             </div>
         </footer>
+
+<!-- .////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////-----SCRIPT-----////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////. -->
 
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="js/slick.min.js"></script>

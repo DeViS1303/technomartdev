@@ -342,17 +342,23 @@ h6
 }
 
 .main-header__btn-bookmarks,
-.main-header__btn-case
+.main-header__btn-case,
+.main-header__checkout
 {
     font-family: 'Cuprum';
     font-size: 17px;
-    line-height: 18px; 
+    line-height: 18px;
 
     position: relative;
 
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 15.95745%;
     padding: 0;
     padding-top: 12px;
     padding-bottom: 13px;
+
+    text-align: left; 
 
     color: #fff;
     border: 0;
@@ -360,35 +366,39 @@ h6
     background-color: #293449;
 }
 .main-header__btn-bookmarks:hover,
-.main-header__btn-case:hover
+.main-header__btn-case:hover,
+.main-header__checkout:hover
 {
     background-color: #212a3a;
 }
 .main-header__btn-bookmarks:focus,
-.main-header__btn-case:focus
+.main-header__btn-case:focus,
+.main-header__checkout:focus
 {
     background-color: #212a3a;
 }
 .main-header__btn-bookmarks:active,
-.main-header__btn-case:active
+.main-header__btn-case:active,
+.main-header__checkout:active
 {
     opacity: .5; 
     background-color: #161d29;
 }
 .main-header__btn-bookmarks:hover:before,
-.main-header__btn-case:hover:before
+.main-header__btn-case:hover:before,
+.main-header__checkout:hover:before
 {
     opacity: 1;
 }
 .main-header__btn-bookmarks:active:before,
-.main-header__btn-case:active:before
+.main-header__btn-case:active:before,
+.main-header__checkout:active:before
 {
     opacity: .5;
 }
 
 .main-header__btn-bookmarks
 {
-    padding-right: 28px; 
     padding-left: 43px;
 }
 .main-header__btn-bookmarks:before
@@ -411,8 +421,9 @@ h6
 
 .main-header__btn-case
 {
-    padding-right: 31px; 
     padding-left: 49px;
+
+    background-color: #ee3643;
 }
 .main-header__btn-case:before
 {
@@ -440,8 +451,7 @@ h6
     display: block;
 
     padding-top: 12px;
-    padding-right: 21px; 
-    padding-left: 21px;
+    padding-left: 21px; 
 
     color: #fff;
     outline: none;
@@ -2235,6 +2245,12 @@ h6
     margin-right: 45px;
 }
 
+.sort__link--active-sort
+{
+    color: black;
+    border-bottom-style: solid;
+}
+
 .sort__up,
 .sort__down
 {
@@ -2301,6 +2317,96 @@ h6
 .product-list__item:nth-last-child(-n+3)
 {
     margin-bottom: 0;
+}
+
+.catalog-perforator
+{
+    margin-bottom: 60px;
+}
+
+.pagination-list
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.pagination-list__item:last-child a
+{
+    margin-right: 0; 
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+.pagination-list__link
+{
+    font-family: 'PT-Sans';
+    font-size: 13px;
+    line-height: 18px;
+
+    display: block;
+
+    min-width: 38px;
+    margin-right: 10px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+
+    text-align: center;
+
+    color: #000; 
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+}
+.pagination-list__link:hover,
+.pagination-list__link:focus
+{
+    border-color: #bdc5c9;
+}
+.pagination-list__link:active
+{
+    border-color: #ee3643;
+}
+
+.pagination-list__link--disable
+{
+    cursor: default; 
+    pointer-events: none;
+
+    color: #fff;
+    border-color: #ee3643;
+    background-color: #ee3643;
+}
+
+.about-of-perforators
+{
+    padding-top: 65px;
+    padding-bottom: 70px;
+
+    background-color: #f2f6f8;
+}
+
+.about-of-perforators__title
+{
+    font-family: 'Cuprum';
+    font-size: 30px;
+    line-height: 30px; 
+
+    margin-bottom: 20px;
+}
+
+.about-of-perforators__description
+{
+    font-family: 'PT-Sans';
+    font-size: 13px;
+    line-height: 24px; 
+
+    margin: 0;
+    padding: 0;
 }
 
 /*  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
